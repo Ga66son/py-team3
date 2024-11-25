@@ -44,7 +44,7 @@ class Computer(Technique, CodeMixin):
         self.disk = disk
        
 
-class HomeTecnique(Technique):
+class HomeTecnique(Technique, ABC):
     def __init__(self, id, brand, price, balance, warranty):
         super().__init__(id, brand, price, balance)
         self.warranty = warranty
